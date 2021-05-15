@@ -1,0 +1,32 @@
+import { httpRequest } from '../../main/http'
+import { SIGNUP_ACTION_TYPE } from './singup.type'
+import { SIGNUP_API, SIGNUP_FORM_REDIRECT_ON_ULOAD_PATH } from './signup.constant'
+import { authSetData } from '../../lib/common/auth'
+import { redirect } from '../../main/navigation/navigation.core'
+export function signupFormUploadData(data) {
+    return async (dispatch) => {
+        dispatch({
+            type: SIGNUP_ACTION_TYPE.SINGUP_FORM_UPLOAD_PENDING
+        })
+        try {
+            const res = await httpRequest({
+                method: SIGNUP_API.SIGNUP_FORM_UPLOAD.METHOD,
+                url: SIGNUP_API.SIGNUP_FORM_UPLOAD.ENDPOINT,
+                data,
+            });
+            dispatch(authSetData(res.data.accessToken))
+            dispatch({
+                type: SIGNUP_ACTION_TYPE.SINGUP_FORM_UPLOAD_SUCCESS
+            })
+            redirect(SIGNUP_FORM_REDIRECT_ON_ULOAD_PATH);
+        } catch (error) {
+            if (error.response) {
+                dispatch({
+                    type: SIGNUP_ACTION_TYPE.SINGUP_FORM_UPLOAD_ERROR,
+                    errorMessage:error.response.data.message
+                })
+            }
+
+        }
+    }
+}
