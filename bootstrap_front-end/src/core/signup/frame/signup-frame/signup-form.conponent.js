@@ -1,7 +1,8 @@
 import React from 'react';
-import { FieldPrimary } from '../../../../lib/elements/field'
 import styled from 'styled-components'
+import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
+import { Button } from '../../../../lib/elements/buttons'
 export function SignupFormComponent(props) {
     const {
         fieldLogin,
@@ -55,7 +56,7 @@ export function SignupFormComponent(props) {
                 {isError && errorMessage}
                 <Button type="submit" disabled={isSubmitting}>
                     Submit
-            </Button>
+                </Button>
             </Box>
         </form >
 
@@ -66,7 +67,4 @@ const Box = styled.div`
     display:grid;
     gap:16px;
 `;
-const Button = styled.button`
-    background:#809aeb;
-    border-radius:15px;
-`
+

@@ -1,5 +1,5 @@
 import { httpRequest } from '../../main/http'
-import { SIGNUP_ACTION_TYPE } from './singup.type'
+import { SIGNUP_ACTION_TYPE } from './signup.type'
 import { SIGNUP_API, SIGNUP_FORM_REDIRECT_ON_ULOAD_PATH } from './signup.constant'
 import { authSetData } from '../../lib/common/auth'
 import { redirect } from '../../main/navigation/navigation.core'

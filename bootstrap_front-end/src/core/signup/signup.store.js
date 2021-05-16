@@ -1,4 +1,4 @@
-import { SIGNUP_ACTION_TYPE } from './singup.type';
+import { SIGNUP_ACTION_TYPE } from './signup.type';
 import { initRequestState, setRequestError, setRequestPending, setRequestSuccess } from '../../main/store/store.service'
 const initialState = {
     singupForm: initRequestState(),

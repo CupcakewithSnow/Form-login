@@ -1,7 +1,8 @@
 import { text } from '../../common/text'
 import { TextSecondary } from '../text'
-import { spacing } from '../../theme'
 import styled from 'styled-components'
+import {THEME_COLOR,THEME_SIZE,spacing} from '../../theme'
+
 export function FieldPrimary(props) {
     const {
         titleTid,
@@ -31,14 +32,14 @@ const Container = styled.div`
     flex-direction:column
 `;
 const Input = styled.input`
-    background:#f3f3f3;
-    border-radius:5px;
-    padding:5px 10px;
+    background:${THEME_COLOR.LIGHT_GRAY};
+    border-radius:${THEME_SIZE.RADIUS.FIELD};
+    padding:${spacing(1),spacing(2)};
 `;
 const Title = styled(TextSecondary)`
     margin-bottom:${spacing(1)};
 `;
 const ErrorMessage = styled.span`
-    color:red;
-    font-size:14px;
+    color:${THEME_COLOR.ERROR};
+    font-size:${THEME_SIZE.FONT.SMALL};
 `;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { SIGNUP_FORM_FIELD_NAME, SIGNUP_FIELD_NAME } from './singup.type'
+import { SIGNUP_FORM_FIELD_NAME, SIGNUP_FIELD_NAME } from './signup.type'
 import { signupFormValidation } from './signup.validation'
 import { signupFormUploadData } from './signup.action'
-import { SingupComponent } from './sugnup.component';
-import { convertSignupFormData } from './singup.convert';
+import { SingupComponent } from './signup.component';
+import { convertSignupFormData } from './signup.convert';
 import { SIGNUP_STORE_NAME } from './signup.constant';
 import { NAVIGATION_STORE_NAME } from '../../lib/common/navigation'
 import { getRequestErrorMessage, isRequestError, isRequestPending, isRequestSuccess } from '../../main/store/store.service';

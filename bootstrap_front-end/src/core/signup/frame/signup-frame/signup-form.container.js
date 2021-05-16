@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
 import { SignupFormComponent } from './signup-form.conponent'
-import { SIGNUP_FORM_FIELD_KEY } from './singup-form.type'
+import { SIGNUP_FORM_FIELD_KEY } from './signup-form.type'
 export function SignupFormContainer(props) {
     const LOGIN_NAME = props.fieldName[SIGNUP_FORM_FIELD_KEY.LOGIN];
     const PASSWORD_NAME = props.fieldName[SIGNUP_FORM_FIELD_KEY.PASSWORD];
