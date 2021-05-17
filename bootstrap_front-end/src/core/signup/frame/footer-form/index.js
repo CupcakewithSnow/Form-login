@@ -1,0 +1,1 @@
+export {FooterFormComponent} from './footer-form.component'

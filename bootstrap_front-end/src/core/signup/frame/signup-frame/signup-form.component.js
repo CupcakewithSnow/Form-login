@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
-import { Button } from '../../../../lib/elements/button'
+import { PrimaryButton } from '../../../../lib/elements/button'
 import { ErrorEvent, PendingEvent, LoadingEvent } from '../../../../lib/elements/events'
 
 export function SignupFormComponent(props) {
@@ -56,9 +56,7 @@ export function SignupFormComponent(props) {
                 </FieldLayout>
                 <PendingEvent isPending={isPending} />
                 <ErrorEvent isError={isError} errorMessage={errorMessage} />
-                <Button type="submit" disabled={isSubmitting}>
-                    Submit
-                </Button>
+                <PrimaryButton tvalue='Submit' type='submit'/>
             </Box>
         </form >
 

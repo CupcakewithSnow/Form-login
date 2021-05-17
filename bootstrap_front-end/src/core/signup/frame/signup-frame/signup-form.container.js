@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { SignupFormComponent } from './signup-form.conponent'
+import { SignupFormComponent } from './signup-form.component'
 import { SIGNUP_FORM_FIELD_KEY } from './signup-form.type'
 
 export function SignupFormContainer(props) {

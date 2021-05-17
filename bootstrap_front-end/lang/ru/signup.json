@@ -1,9 +1,16 @@
 {
     "FOOTER_FORM":{
         "TITLE":{
-            "LOGIN":"Нет акаунта? Зарегестрируйтесь",
-            "REGISTRATION":"Есть аккаунт? Войти"
+            "LOGIN":"Нет акаунта? ",
+            "REGISTRATION":"Есть аккаунт?"
+        },
+        "LINK":{
+            "LOGIN":"Зарегестрируйтесь",
+            "REGISTRATION":"Войти"
         }
+    },
+    "BUTTON":{
+        "SUBMIT":"Submit"
     },
     "HEADER_FORM":{
         "TITLE":"Регистрация"

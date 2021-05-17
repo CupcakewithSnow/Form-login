@@ -1,12 +1,12 @@
 import { SignupFormContainer } from './frame/signup-frame'
-import { HeaderFormContainer } from './frame/header-frame'
-import {FooterFormContainer} from './frame/footer-frame'
+import { AuthFormTitle } from '../../lib/elements/title'
+import { FooterFormComponent } from './frame/footer-form'
 export function SingupComponent(props) {
     return (
         <div>
-            <HeaderFormContainer/>
+            <AuthFormTitle nameTitle='SIGNUP.HEADER_FORM.TITLE' />
             <SignupFormContainer {...props} />
-            <FooterFormContainer/>
+            <FooterFormComponent tvalueOne='SIGNUP.FOOTER_FORM.TITLE.LOGIN' tvalueTwo='SIGNUP.FOOTER_FORM.LINK.LOGIN' />
         </div>
     )
 }
