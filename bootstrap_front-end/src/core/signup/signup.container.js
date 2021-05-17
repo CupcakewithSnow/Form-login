@@ -8,6 +8,7 @@ import { convertSignupFormData } from './signup.convert';
 import { SIGNUP_STORE_NAME } from './signup.constant';
 import { NAVIGATION_STORE_NAME } from '../../lib/common/navigation'
 import { getRequestErrorMessage, isRequestError, isRequestPending, isRequestSuccess } from '../../main/store/store.service';
+
 export function SignupContainer(props) {
     const dispatch = useDispatch()
     const { state, pageLoading } = useSelector((state) => ({
@@ -34,10 +35,10 @@ export function SignupContainer(props) {
             initialValue={signupFormGetInitialValues()}
             validation={signupFormValidation}
             onSubmitForm={signupFormSendData}
-            fieldName={SIGNUP_FORM_FIELD_NAME} 
+            fieldName={SIGNUP_FORM_FIELD_NAME}
             pageLoading={pageLoading}
-            />
-        
+        />
+
     )
 }
 

@@ -1,0 +1,1 @@
+export {FooterFormContainer} from './footer-form.container'

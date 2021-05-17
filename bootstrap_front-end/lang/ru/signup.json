@@ -1,4 +1,13 @@
 {
+    "FOOTER_FORM":{
+        "TITLE":{
+            "LOGIN":"Нет акаунта? Зарегестрируйтесь",
+            "REGISTRATION":"Есть аккаунт? Войти"
+        }
+    },
+    "HEADER_FORM":{
+        "TITLE":"Регистрация"
+    },
     "SIGNUP_FORM": {
         "FIELD": {
             "LOGIN": {

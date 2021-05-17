@@ -1,6 +1,7 @@
 import { text } from '../../common/text'
 import styled from 'styled-components'
-import {THEME_SIZE,THEME_COLOR} from '../../theme'
+import { THEME_SIZE, THEME_COLOR } from '../../theme'
+
 export function TextSecondary(props) {
     return <Text>{text(props.tid, props.tvalue)}</Text>
 }

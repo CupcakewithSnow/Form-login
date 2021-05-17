@@ -1,5 +1,6 @@
 import { SignupContainer } from './signup.container'
 import { PageLayout, AuthLayout, ContentLayout } from '../../lib/elements/layout'
+
 export function SignupPage() {
     return (
         <ContentLayout>

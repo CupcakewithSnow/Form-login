@@ -3,6 +3,7 @@ import { SIGNUP_ACTION_TYPE } from './signup.type'
 import { SIGNUP_API, SIGNUP_FORM_REDIRECT_ON_ULOAD_PATH } from './signup.constant'
 import { authSetData } from '../../lib/common/auth'
 import { redirect } from '../../main/navigation/navigation.core'
+
 export function signupFormUploadData(data) {
     return async (dispatch) => {
         dispatch({
@@ -23,7 +24,7 @@ export function signupFormUploadData(data) {
             if (error.response) {
                 dispatch({
                     type: SIGNUP_ACTION_TYPE.SINGUP_FORM_UPLOAD_ERROR,
-                    errorMessage:error.response.data.message
+                    errorMessage: error.response.data.message
                 })
             }
 

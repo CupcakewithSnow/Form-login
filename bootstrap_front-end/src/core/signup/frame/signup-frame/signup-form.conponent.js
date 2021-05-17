@@ -4,6 +4,7 @@ import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
 import { Button } from '../../../../lib/elements/buttons'
 import { ErrorEvent, PendingEvent, LoadingEvent } from '../../../../lib/elements/events'
+
 export function SignupFormComponent(props) {
     const {
         fieldLogin,
@@ -32,7 +33,7 @@ export function SignupFormComponent(props) {
 
         <form onSubmit={handleSubmit}>
             <Box>
-                <LoadingEvent pageLoading={pageLoading}/>
+                <LoadingEvent pageLoading={pageLoading} />
                 <FieldLayout>
                     <FieldPrimary
                         titleTid='SIGNUP.SIGNUP_FORM.FIELD.LOGIN.TITLE'

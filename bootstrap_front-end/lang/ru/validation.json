@@ -1,3 +1,7 @@
 {
-  
+    "SIGNUP_FORM": {
+        "EMAIL":{
+            "REQUERED":"Required"
+        }
+    }
 }

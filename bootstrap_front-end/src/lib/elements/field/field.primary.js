@@ -15,7 +15,7 @@ export function FieldPrimary(props) {
     } = props
     return (
         <Container>
-            <Title tid={titleTid} />
+            <Title tid={text(titleTid)} />
             <Input
                 onChange={onChange}
                 onBlur={onBlur}
@@ -23,7 +23,7 @@ export function FieldPrimary(props) {
                 name={name}
                 placeholder={text(placeholderTid)}
             />
-            {error && <ErrorMessage>{error}</ErrorMessage>}
+            {error && <ErrorMessage>{text(error)}</ErrorMessage>}
         </Container>
     )
 }
