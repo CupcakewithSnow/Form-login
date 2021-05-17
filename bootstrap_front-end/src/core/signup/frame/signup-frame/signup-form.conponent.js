@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
-import { Button } from '../../../../lib/elements/buttons'
+import { Button } from '../../../../lib/elements/button'
 import { ErrorEvent, PendingEvent, LoadingEvent } from '../../../../lib/elements/events'
 
 export function SignupFormComponent(props) {
