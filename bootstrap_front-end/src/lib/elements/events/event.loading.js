@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { text } from '../../common/text'
 import { THEME_COLOR, THEME_SIZE } from '../../theme'
 
-export function LoadingEvent() {
+export function LoadingEvent(props) {
     return (
-        <EventLoading tid='SIGNUP.SIGNUP_FORM.ACTION.LOADING' />
+        <EventLoading tid={props.tid} />
     )
 }
 function EventLoading(props) {

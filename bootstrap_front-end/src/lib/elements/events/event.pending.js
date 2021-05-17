@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { text } from '../../common/text'
 import { THEME_COLOR, THEME_SIZE } from '../../theme'
 
-export function PendingEvent() {
+export function PendingEvent(props) {
     return (
-        <EventPending tid='SIGNUP.SIGNUP_FORM.ACTION.PENDING'/>
+        <EventPending tid={props.tid}/>
     )
 }
 function EventPending(props) {

@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
 import { PrimaryButton } from '../../../../lib/elements/button'
-import { ErrorEvent,} from '../../../../lib/elements/events'
-import {LoadingEvent, PendingEvent} from '../../../../lib/elements/events'
+import { LoadingEvent, PendingEvent, ErrorEvent } from '../../../../lib/elements/events'
 
 export function SignupFormComponent(props) {
     const {
@@ -34,7 +33,7 @@ export function SignupFormComponent(props) {
 
         <form onSubmit={handleSubmit}>
             <Box>
-                {pageLoading && <LoadingEvent/>}
+                {pageLoading && <LoadingEvent tid='SIGNUP.SIGNUP_FORM.ACTION.LOADING' />}
                 <FieldLayout>
                     <FieldPrimary
                         titleTid='SIGNUP.SIGNUP_FORM.FIELD.LOGIN.TITLE'
@@ -55,9 +54,9 @@ export function SignupFormComponent(props) {
                         error={isFiedlError(fieldPassword)}
                     />
                 </FieldLayout>
-                {isPending&& <PendingEvent/>}
-                <ErrorEvent isError={isError} errorMessage={errorMessage} />
-                <PrimaryButton tvalue='Submit' type='submit'/>
+                {isPending && <PendingEvent tid='SIGNUP.SIGNUP_FORM.ACTION.PENDING' />}
+                {isError&& <ErrorEvent errorMessage={errorMessage}/>}
+                <PrimaryButton tvalue='Submit' type='submit' />
             </Box>
         </form >
 
