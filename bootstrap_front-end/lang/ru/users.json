@@ -1,0 +1,10 @@
+{
+    "ATTRIBUT":{
+        "ID":"ID",
+        "LOGIN":"LOGIN",
+        "NAME":"NAME"
+    },
+    "FIELD":{
+        "ALL_USERS":"Все пользователи"
+    }
+}

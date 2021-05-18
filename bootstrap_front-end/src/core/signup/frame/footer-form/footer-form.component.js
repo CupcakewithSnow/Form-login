@@ -7,7 +7,7 @@ export function FooterFormComponent(props) {
     } = props
     return (
         <>
-        <TextSecondary tid={text(tvalueOne)}></TextSecondary>
+        <TextSecondary tid={text(tvalueOne)}/>
         <LinkSecondary tid={text(tvalueTwo)} />
         </>
 

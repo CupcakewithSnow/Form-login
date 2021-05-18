@@ -3,11 +3,11 @@ import { text } from '../../common/text'
 import { THEME_COLOR, THEME_SIZE } from '../../theme'
 export function PrimaryButton(props){
     const{
-        tvalue,
+        tid,
         type,
     } = props
     return(
-        <Button type={type}>{text(tvalue)}</Button>
+        <Button type={type}>{text(tid)}</Button>
     )
 }
     

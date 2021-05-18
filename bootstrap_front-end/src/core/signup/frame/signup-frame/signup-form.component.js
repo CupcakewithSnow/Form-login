@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field'
 import { FieldLayout } from '../../../../lib/elements/layout'
+import {spacing} from '../../../../lib/theme'
 import { PrimaryButton } from '../../../../lib/elements/button'
 import { LoadingEvent, PendingEvent, ErrorEvent } from '../../../../lib/elements/events'
 
@@ -56,7 +57,7 @@ export function SignupFormComponent(props) {
                 </FieldLayout>
                 {isPending && <PendingEvent tid='SIGNUP.SIGNUP_FORM.ACTION.PENDING' />}
                 {isError&& <ErrorEvent errorMessage={errorMessage}/>}
-                <PrimaryButton tvalue='Submit' type='submit' />
+                <PrimaryButton tid='SIGNUP.BUTTON.SUBMIT' type='submit' />
             </Box>
         </form >
 
@@ -65,6 +66,6 @@ export function SignupFormComponent(props) {
 }
 const Box = styled.div`
     display:grid;
-    gap:16px;
+    gap:${spacing(4)};
 `;
 
